@@ -1,6 +1,6 @@
 {
   "name": "@twipped/condition",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Complex state machine engine for performing multi-level data analysis",
   "type": "module",
   "exports": {
