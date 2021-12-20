@@ -1,0 +1,55 @@
+{
+  "name": "@twipped/condition",
+  "version": "0.0.0",
+  "description": "Complex state machine engine for performing multi-level data analysis",
+  "type": "module",
+  "exports": {
+    ".": "./src/condition.js",
+    "./mobx": "./src/observable.js",
+    "./prop-types": "./src/prop-types.js",
+    "./utils": "./src/utils.js"
+  },
+  "scripts": {
+    "test": "tap -R base --no-coverage tests",
+    "cover": "tap -R terse --coverage tests",
+    "lint": "eslint './{src,tests}/**/*.{js,jsx}' --fix"
+  },
+  "engines": {
+    "node": ">=12.10.0"
+  },
+  "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Twipped/condition"
+  },
+  "optionalDependencies": {
+    "mobx": ">=6.3.0",
+    "prop-types": ">=15.0.0"
+  },
+  "devDependencies": {
+    "eslint": "~8.5.0",
+    "eslint-config-twipped": "~6.0.0",
+    "eslint-plugin-node": "~11.1.0",
+    "eslint-plugin-promise": "~6.0.0",
+    "tap": "~15.1.5",
+    "tapsuite": "~2.0.1"
+  },
+  "files": [
+    "src",
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "dependencies": {
+    "@twipped/jpath": "~2.1.0",
+    "@twipped/utils": "~4.2.0",
+    "date-fns": "~2.27.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "eslintConfig": {
+    "extends": "twipped/node-esm"
+  }
+}
